@@ -1,0 +1,12 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+input[type="button"] {
+    padding: 12px;
+    margin:  10px 20px;
+}
+
+.clrBtn {
+}
