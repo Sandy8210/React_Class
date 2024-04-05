@@ -1,0 +1,78 @@
+ :root {
+   --body-background: #000;
+
+   --primary-text: #fff;
+   --font-size1: 1.3rem;
+   --font-size2: 1rem;
+
+   --span-colr: orange;
+   --title-color: red;
+ }
+
+ body {
+   background-color: var(--body-background)
+ }
+
+ h1,
+ p {
+   color: var(--primary-text);
+   text-align: center;
+   font-size: var(--font-size1);
+ }
+
+ span {
+   color: var(--span-colr);
+   text-shadow: 2px 5px 3.5px rgba(255, 255, 255, 0.3);
+   font-weight: 900;
+ }
+
+ .topic {
+   text-decoration: underline;
+   color: var(--title-color);
+ }
+
+ .btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ button {
+   padding: 5px 14px;
+   text-align: center;
+   margin: 0 30px;
+   padding: 10px 40px;
+   background-color: var(--title-color);
+   color: var(--primary-text);
+   font-size: var(--font-size2);
+   border-radius: 8px;
+   box-shadow: 3px 5px 3px rgba(184, 128, 54, 0.3);
+ }
+
+ .success {
+   padding: 0;
+   background-color: var(--span-colr);
+   font-family: monospace;
+ }
+
+ .form__field {
+   width: 60%;
+   margin: auto;
+   padding: 30px;
+   background-color: var(--span-colr);
+ }
+
+ .form__field input {
+   width: 100%;
+   padding: 10px;
+   outline: none;
+   margin-top: 15px;
+   display: inline-block;
+ }
+
+ .form__field select {
+   width: 100%;
+   padding: 10px;
+   margin-top: 15px;
+   outline: none;
+ }
