@@ -1,6 +1,7 @@
-import './App.css';
-import { ListTable } from './Task/ListTable';
-import Task4 from './Task/Task4';
+import "./App.css";
+import Admin from "./Task/Admin";
+import { ListTable } from "./Task/ListTable";
+import Task4 from "./Task/Task4";
 // import Task3 from './Task/Task3';
 // import HandleForm from './components/HandleForm';
 // import Task1 from './Task/Task1';
@@ -59,7 +60,8 @@ function App() {
       {/* <Task3 /> */}
 
       {/* <Task4 /> */}
-      <ListTable/>
+      {/* <ListTable/> */}
+      <Admin />
     </>
   );
 }
