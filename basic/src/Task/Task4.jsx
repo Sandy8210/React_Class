@@ -18,11 +18,11 @@ function Task4() {
     }
     return (
         <>
-            <input type='text' value={input} />
+            <input readOnly draggable type='text' value={input} />
 
             <br /><br />
 
-            <input type='button' value="1" onClick={() => handleClick("1")} />
+            <input draggable type='button' value="1" onClick={() => handleClick("1")} />
             <input type="button" value="2" onClick={() => handleClick("2")} />
             <input type="button" value="3" onClick={() => handleClick("3")} />
             <input type="button" value="4" onClick={() => handleClick("4")} />
@@ -40,11 +40,11 @@ function Task4() {
             <input type="button" value="0" onClick={() => handleClick("0")} />
             <input type="button" value="*" onClick={() => handleClick("*")} />
             <input type="button" value="/" onClick={() => handleClick("/")} />
-            <input type="button" value="=" onClick={() => handleClick("=")} />
+            <input className='primay' type="button" value="=" onClick={() => handleClick("=")} />
             <br /> <br />
 
-
-            <input type="button" value="CLR" className='clrBtn' onClick={() => handleClick("CLR")} />
+        
+            <input type="button" value="CLR" onClick={() => handleClick("CLR")}  className='clrButton'/>
 
 
 
