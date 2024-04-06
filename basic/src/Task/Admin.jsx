@@ -10,6 +10,7 @@ function Admin() {
   const showAdmin = () => {
     setCreateBtn(true);
   };
+
   const [data, setData] = useState({});
   const [employees, setEmployees] = useState([]);
 
@@ -20,6 +21,7 @@ function Admin() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setEmployees([...employees, data]);
+    alert("Successfully added");
     console.log(employees);
   };
 
