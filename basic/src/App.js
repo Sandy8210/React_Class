@@ -2,6 +2,13 @@ import "./App.css";
 import Admin from "./Task/Admin";
 import { ListTable } from "./Task/ListTable";
 import Task4 from "./Task/Task4";
+import Mousemove from "./components/Mousemove";
+import TimerMsg from "./components/TimerMsg";
+import UseEffect from "./components/UseEffect";
+import UseEffect2 from "./components/UseEffect2";
+import UseEffect3 from "./components/UseEffect3";
+import UseEffectInterval from "./components/UseEffectInterval";
+import UseEffectTimeOut from "./components/UseEffectTimeOut";
 // import Task3 from './Task/Task3';
 // import HandleForm from './components/HandleForm';
 // import Task1 from './Task/Task1';
@@ -61,7 +68,15 @@ function App() {
 
       {/* <Task4 /> */}
       {/* <ListTable/> */}
-      <Admin />
+      {/* <Admin /> */}
+
+      {/* <UseEffect /> */}
+      {/* <UseEffect2 /> */}
+      {/* <UseEffect3 /> */}
+      {/* <UseEffectInterval /> */}
+      {/* <UseEffectTimeOut /> */}
+      {/* <Mousemove /> */}
+      <TimerMsg />
     </>
   );
 }
