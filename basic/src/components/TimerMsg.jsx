@@ -16,11 +16,13 @@ export default function TimerMsg() {
 
   useEffect(() => {
     const timeString = timer.toLocaleTimeString();
-    if (timeString === "12:08:15 PM") {
+
+    let timeStop = "12:29:15 PM";
+    if (timeString === timeStop) {
       setVal("Happy Birthday sandy");
     }
 
-    if (timeString === "12:08:20 PM") {
+    if (timeString === "12:29:20 PM") {
       setVal("");
     }
   }, [timer]);
