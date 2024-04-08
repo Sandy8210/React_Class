@@ -2,6 +2,7 @@ import "./App.css";
 import Admin from "./Task/Admin";
 import { ListTable } from "./Task/ListTable";
 import Task4 from "./Task/Task4";
+import Timer from "./Task/Timer";
 import Mousemove from "./components/Mousemove";
 import TimerMsg from "./components/TimerMsg";
 import UseEffect from "./components/UseEffect";
@@ -76,7 +77,8 @@ function App() {
       {/* <UseEffectInterval /> */}
       {/* <UseEffectTimeOut /> */}
       {/* <Mousemove /> */}
-      <TimerMsg />
+      {/* <TimerMsg /> */}
+      <Timer />
     </>
   );
 }
