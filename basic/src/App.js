@@ -1,5 +1,6 @@
 import "./App.css";
 import Admin from "./Task/Admin";
+import CountDownTimer from "./Task/CountDownTimer";
 import { ListTable } from "./Task/ListTable";
 import Task4 from "./Task/Task4";
 import Timer from "./Task/Timer";
@@ -78,7 +79,8 @@ function App() {
       {/* <UseEffectTimeOut /> */}
       {/* <Mousemove /> */}
       {/* <TimerMsg /> */}
-      <Timer />
+      {/* <Timer /> */}
+      <CountDownTimer />
     </>
   );
 }

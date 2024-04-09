@@ -4,6 +4,7 @@
   --primary-text: #fff;
   --font-size1: 1.3rem;
   --font-size2: 1rem;
+  --font-size3: 2rem;
 
   --span-colr: orange;
   --title-color: red;
@@ -17,7 +18,7 @@ h1,
 p {
   color: var(--primary-text);
   text-align: center;
-  font-size: var(--font-size1);
+  font-size: var(--font-size3);
 }
 
 span {
@@ -37,6 +38,24 @@ span {
   align-items: center;
 }
 
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s ease;
+}
+input {
+  padding: 5px 10px;
+}
 /* button {
   padding: 5px 14px;
   text-align: center;
@@ -97,4 +116,12 @@ span {
   width: 40%;
   padding: 20px;
   margin: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
 }
