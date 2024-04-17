@@ -32,20 +32,17 @@ export default function ProgressCount() {
   return (
     <div className="center">
       {istimerComplete ? (
-        // <h2>
-        //   Happy Wedding Aniversary To <span> LGBTQ+ </span> Kaushika ( Ground Floor)
-        //   <span>
-        //     <i class="fa-solid fa-heart-pulse"></i>
-        //   </span>
-        //   Rathika ( Biggest Fan Of RCB )
-        // </h2>
-
-        <h3>
-          <span>
-            <i class="fa-regular fa-heart"></i>
-          </span>
-        </h3>
+        <h2>
+          Happy Wedding Aniversary To <span> LGBTQ+ </span> <br /> Kaushika ( Ground Floor)
+          <div class="loader"></div>
+          Rathika ( Biggest Fan Of RCB )
+        </h2>
       ) : (
+        // <h3>
+        //   <span>
+        //     <i class="fa-regular fa-heart"></i>
+        //   </span>
+        // </h3>
         <div className="container">
           <div className="loading" style={{ width: loaderWidth + "%" }}></div>
         </div>
