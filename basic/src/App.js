@@ -46,6 +46,8 @@ import ProgressCount from "./components/ProgressCount";
 import Parent from "./components/Parent";
 import Usememo from "./components/UsememoFunc";
 import UseRefFunc from "./components/UseRefFunc";
+import Timer_UseRef from "./components/Timer_UseRef";
+import ShoppingCart from "./components/ShoppingCart";
 
 export const CountContext = React.createContext();
 
@@ -147,7 +149,10 @@ function App() {
       {/* <ProgressCount /> */}
       {/* <Parent /> */}
       {/* <Usememo /> */}
-      <UseRefFunc />
+      {/* <UseRefFunc /> */}
+      {/* <Timer_UseRef /> */}
+
+      <ShoppingCart />
     </>
   );
 }

@@ -1,4 +1,3 @@
-import { faL } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 
 export default function ProgressCount() {
@@ -8,8 +7,8 @@ export default function ProgressCount() {
   const [istimerComplete, setIsTimerComplete] = useState(false);
 
   const handleChange = (e) => {
-    setDuration(e.target.value);
-    setSeconds(e.target.value);
+    setDuration(e.target.value); // 10
+    setSeconds(e.target.value); // 10
   };
 
   useEffect(() => {
@@ -33,9 +32,9 @@ export default function ProgressCount() {
     <div className="center">
       {istimerComplete ? (
         <h2>
-          Happy Wedding Aniversary To <span> LGBTQ+ </span> <br /> Kaushika ( Ground Floor)
+          Happy Wedding Aniversary To <span> LGBTQ+ </span> <br /> <span> Kaushika ( Ground Floor ) </span>
           <div class="loader"></div>
-          Rathika ( Biggest Fan Of RCB )
+          <span> Rathika ( Biggest Fan Of RCB )</span>
         </h2>
       ) : (
         // <h3>
