@@ -1,0 +1,41 @@
+{
+  "register": [
+    {
+      "id": "1",
+      "name": "sandy",
+      "age": "18",
+      "mark": "10"
+    },
+    {
+      "id": "2",
+      "name": "sandy",
+      "age": "22",
+      "mark": "105"
+    },
+    {
+      "id": "3",
+      "name": "kannan",
+      "age": "24",
+      "mark": "100"
+    },
+    {
+      "id": "4",
+      "name": "sandy",
+      "age": "28",
+      "mark": "100"
+    },
+
+    {
+      "id": "5",
+      "name": "nawin",
+      "age": "20",
+      "mark": "50"
+    },
+    {
+      "id": "6",
+      "name": "santhosh",
+      "age": "24",
+      "mark": "24"
+    }
+  ]
+}

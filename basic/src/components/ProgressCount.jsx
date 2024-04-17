@@ -1,0 +1,63 @@
+import { faL } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useState } from "react";
+
+export default function ProgressCount() {
+  const [duration, setDuration] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+  const [istimerComplete, setIsTimerComplete] = useState(false);
+
+  const handleChange = (e) => {
+    setDuration(e.target.value);
+    setSeconds(e.target.value);
+  };
+
+  useEffect(() => {
+    let interval;
+    if (isRunning && seconds) {
+      interval = setInterval(() => {
+        setSeconds((prev) => prev - 1);
+      }, 1000);
+    } else if (seconds === 0 && isRunning) {
+      setIsTimerComplete(true);
+      setIsRunning(false);
+    }
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [isRunning, seconds]);
+
+  const loaderWidth = (seconds / duration) * 100;
+  return (
+    <div className="center">
+      {istimerComplete ? (
+        // <h2>
+        //   Happy Wedding Aniversary To <span> LGBTQ+ </span> Kaushika ( Ground Floor)
+        //   <span>
+        //     <i class="fa-solid fa-heart-pulse"></i>
+        //   </span>
+        //   Rathika ( Biggest Fan Of RCB )
+        // </h2>
+
+        <h3>
+          <span>
+            <i class="fa-regular fa-heart"></i>
+          </span>
+        </h3>
+      ) : (
+        <div className="container">
+          <div className="loading" style={{ width: loaderWidth + "%" }}></div>
+        </div>
+      )}
+
+      <input type="text" value={duration} onChange={handleChange} disabled={isRunning} />
+      <br />
+      <br />
+      <div>
+        {isRunning ? <button onClick={() => setIsRunning(false)}>Stop</button> : <button onClick={() => setIsRunning(true)}>Start</button>}
+        <button onClick={() => setSeconds(duration)}>Reset</button>
+      </div>
+    </div>
+  );
+}

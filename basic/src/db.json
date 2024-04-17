@@ -1,0 +1,29 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Prakash",
+      "mark": 100
+    },
+    {
+      "id": 2,
+      "name": "Santhosh"
+    },
+    {
+      "id": 3,
+      "name": "Sakthi"
+    },
+    {
+      "id": 4,
+      "name": "SakthiPriya"
+    },
+    {
+      "id": 5,
+      "name": "Thenu"
+    },
+    {
+      "id": 6,
+      "name": "Thenmozhi"
+    }
+  ]
+}

@@ -1,16 +1,26 @@
-import "./App.css";
 import Admin from "./Task/Admin";
 import CountDownTimer from "./Task/CountDownTimer";
 import { ListTable } from "./Task/ListTable";
 import Task4 from "./Task/Task4";
 import Timer from "./Task/Timer";
+import Axios from "./components/Axios";
+import AxiosFilter from "./components/AxiosFilter";
+import Count from "./components/Count";
 import Mousemove from "./components/Mousemove";
+import RegisterForm from "./components/RegisterForm";
 import TimerMsg from "./components/TimerMsg";
 import UseEffect from "./components/UseEffect";
 import UseEffect2 from "./components/UseEffect2";
 import UseEffect3 from "./components/UseEffect3";
 import UseEffectInterval from "./components/UseEffectInterval";
 import UseEffectTimeOut from "./components/UseEffectTimeOut";
+import UseReduce from "./components/UseReduce";
+import "./App.css";
+import UseReduce_object from "./components/UseReduce_object";
+import A from "./components/A";
+import B from "./components/B";
+import C from "./components/C";
+
 // import Task3 from './Task/Task3';
 // import HandleForm from './components/HandleForm';
 // import Task1 from './Task/Task1';
@@ -30,9 +40,43 @@ import UseEffectTimeOut from "./components/UseEffectTimeOut";
 // import State2 from './components/State2';
 // import TableRow from './components/TableRow';
 
+import React, { useReducer } from "react";
+import UC_reducer from "./components/UC_reducer";
+import ProgressCount from "./components/ProgressCount";
+
+export const CountContext = React.createContext();
+
 function App() {
+  // const initialState = 0;
+
+  // const reducer = (state, action) => {
+  //   switch (action) {
+  //     case "incr":
+  //       if (state < 10) {
+  //         return state + 1;
+  //       } else {
+  //         alert("Reached Maximum Item");
+  //         return state;
+  //       }
+  //     case "decr":
+  //       if (state > 0) {
+  //         return state - 1;
+  //       } else {
+  //         alert("Sorry! Empty Stock ");
+  //         return state;
+  //       }
+  //     case "reset":
+  //       return initialState;
+  //     default:
+  //       return state;
+  //   }
+  // };
+
+  // const [count, dispatch] = useReducer(reducer, initialState);
+
   return (
     <>
+      {/* <UC_reducer /> */}
       <h1>Hello Sandy !</h1>
       <hr />
       {/* <Hello name={"BodySoda"} age={27} />
@@ -80,7 +124,24 @@ function App() {
       {/* <Mousemove /> */}
       {/* <TimerMsg /> */}
       {/* <Timer /> */}
-      <CountDownTimer />
+      {/* <CountDownTimer /> */}
+      {/* <Axios /> */}
+      {/* <RegisterForm /> */}
+      {/* <UseReduceHook /> */}
+      {/* <Count /> */}
+      {/* <AxiosFilter /> */}
+      {/* <UseReduce /> */}
+      {/* <UseReduce_object /> */}
+
+      {/* <CountContext.Provider value={{ count, dispatch }}>
+        <h1>
+          Count Value is : <span> {count} </span> it's from App.jsx
+        </h1>
+        <A />
+        <B />
+        <C />
+      </CountContext.Provider> */}
+      <ProgressCount />
     </>
   );
 }
