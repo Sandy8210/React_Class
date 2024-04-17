@@ -43,6 +43,9 @@ import C from "./components/C";
 import React, { useReducer } from "react";
 import UC_reducer from "./components/UC_reducer";
 import ProgressCount from "./components/ProgressCount";
+import Parent from "./components/Parent";
+import Usememo from "./components/UsememoFunc";
+import UseRefFunc from "./components/UseRefFunc";
 
 export const CountContext = React.createContext();
 
@@ -141,7 +144,10 @@ function App() {
         <B />
         <C />
       </CountContext.Provider> */}
-      <ProgressCount />
+      {/* <ProgressCount /> */}
+      {/* <Parent /> */}
+      {/* <Usememo /> */}
+      <UseRefFunc />
     </>
   );
 }
