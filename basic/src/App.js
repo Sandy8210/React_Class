@@ -48,6 +48,7 @@ import Usememo from "./components/UsememoFunc";
 import UseRefFunc from "./components/UseRefFunc";
 import Timer_UseRef from "./components/Timer_UseRef";
 import ShoppingCart from "./components/ShoppingCart";
+import HookCreate from "./components/HookCreate";
 
 export const CountContext = React.createContext();
 
@@ -152,7 +153,8 @@ function App() {
       {/* <UseRefFunc /> */}
       {/* <Timer_UseRef /> */}
 
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
+      <HookCreate />
     </>
   );
 }
