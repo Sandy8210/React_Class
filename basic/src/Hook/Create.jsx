@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function Create() {
+  
   const [val1, setVal1] = useState("");
   const [val2, setVal2] = useState("");
   const [result, setResult] = useState(null);

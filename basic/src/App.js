@@ -49,6 +49,11 @@ import UseRefFunc from "./components/UseRefFunc";
 import Timer_UseRef from "./components/Timer_UseRef";
 import ShoppingCart from "./components/ShoppingCart";
 import HookCreate from "./components/HookCreate";
+import Counter1 from "./High_Order/Counter1";
+import Counter2 from "./High_Order/Counter2";
+import Product from "./Error_handling/Product";
+import ErrorBoundry from "./Error_handling/ErrorBoundry";
+import Portal from "./components/Portal";
 
 export const CountContext = React.createContext();
 
@@ -115,13 +120,10 @@ function App() {
       <Map />
       <TableRow /> */}
       {/* <HandleForm/> */}
-
       {/* <Task3 /> */}
-
       {/* <Task4 /> */}
       {/* <ListTable/> */}
       {/* <Admin /> */}
-
       {/* <UseEffect /> */}
       {/* <UseEffect2 /> */}
       {/* <UseEffect3 /> */}
@@ -138,7 +140,6 @@ function App() {
       {/* <AxiosFilter /> */}
       {/* <UseReduce /> */}
       {/* <UseReduce_object /> */}
-
       {/* <CountContext.Provider value={{ count, dispatch }}>
         <h1>
           Count Value is : <span> {count} </span> it's from App.jsx
@@ -152,9 +153,27 @@ function App() {
       {/* <Usememo /> */}
       {/* <UseRefFunc /> */}
       {/* <Timer_UseRef /> */}
-
       {/* <ShoppingCart /> */}
       <HookCreate />
+
+      <hr />
+      <Counter1 />
+      <Counter2 name="sandy" />
+      <hr />
+
+      <ErrorBoundry>
+        <Product name="I-Phone" />
+      </ErrorBoundry>
+
+      <ErrorBoundry>
+        <Product name="Samsung" />
+      </ErrorBoundry>
+
+      <ErrorBoundry>
+        <Product name="Nokia" />
+      </ErrorBoundry>
+
+      <Portal />
     </>
   );
 }
