@@ -54,6 +54,9 @@ import Counter2 from "./High_Order/Counter2";
 import Product from "./Error_handling/Product";
 import ErrorBoundry from "./Error_handling/ErrorBoundry";
 import Portal from "./components/Portal";
+import CounterFunction from "./Render_Props/CounterFunction";
+import CounterOne from "./Render_Props/CounterOne";
+import CounterTwo from "./Render_Props/CounterTwo";
 
 export const CountContext = React.createContext();
 
@@ -154,9 +157,9 @@ function App() {
       {/* <UseRefFunc /> */}
       {/* <Timer_UseRef /> */}
       {/* <ShoppingCart /> */}
-      <HookCreate />
+      {/* <HookCreate /> */}
 
-      <hr />
+      {/* <hr />
       <Counter1 />
       <Counter2 name="sandy" />
       <hr />
@@ -173,7 +176,11 @@ function App() {
         <Product name="Nokia" />
       </ErrorBoundry>
 
-      <Portal />
+      <Portal /> */}
+
+      <CounterFunction render={(count, incr) => <CounterOne count={count} countFunction={incr} />} />
+
+      <CounterFunction render={(count, incr) => <CounterTwo count={count} countFunction={incr} />} />
     </>
   );
 }
