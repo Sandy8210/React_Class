@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Product(props) {
+  
   if (props.name === "Nokia") {
     throw new Error(" Sorry da vennai ! ...");
   }

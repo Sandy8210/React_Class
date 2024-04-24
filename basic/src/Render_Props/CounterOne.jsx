@@ -1,9 +1,12 @@
 import React from "react";
 
-export default function CounterOne(props) {
+
+// Parameter pass using object destructuring .
+
+export default function CounterOne({ count, countFunction }) {
   return (
     <div>
-      <button onClick={props.countFunction}>CLick Count is : {props.count} </button>
+      <button onClick={countFunction}>CLick Count is : {count} </button>
     </div>
   );
 }

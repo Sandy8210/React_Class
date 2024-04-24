@@ -57,6 +57,7 @@ import Portal from "./components/Portal";
 import CounterFunction from "./Render_Props/CounterFunction";
 import CounterOne from "./Render_Props/CounterOne";
 import CounterTwo from "./Render_Props/CounterTwo";
+import LazyParent from "./Lazy_Component/LazyParent";
 
 export const CountContext = React.createContext();
 
@@ -169,7 +170,7 @@ function App() {
       </ErrorBoundry>
 
       <ErrorBoundry>
-        <Product name="Samsung" />
+        <Product name="Samsung" /> // Children of error boundry
       </ErrorBoundry>
 
       <ErrorBoundry>
@@ -177,10 +178,14 @@ function App() {
       </ErrorBoundry>
 
       <Portal /> */}
-
+      {/* 
       <CounterFunction render={(count, incr) => <CounterOne count={count} countFunction={incr} />} />
 
       <CounterFunction render={(count, incr) => <CounterTwo count={count} countFunction={incr} />} />
+
+      <hr />
+
+      <LazyParent /> */}
     </>
   );
 }
