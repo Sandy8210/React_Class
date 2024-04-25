@@ -23,3 +23,10 @@ button {
 li {
   list-style: none;
 }
+
+select {
+  padding: 6px;
+  margin: 10px;
+  bottom: none;
+  outline: none;
+}

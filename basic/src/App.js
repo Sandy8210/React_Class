@@ -21,7 +21,7 @@ import A from "./components/A";
 import B from "./components/B";
 import C from "./components/C";
 
-// import Task3 from './Task/Task3';
+import Task3 from "./Task/Task3";
 // import HandleForm from './components/HandleForm';
 // import Task1 from './Task/Task1';
 // import Task2 from './Task/Task2';
@@ -58,6 +58,7 @@ import CounterFunction from "./Render_Props/CounterFunction";
 import CounterOne from "./Render_Props/CounterOne";
 import CounterTwo from "./Render_Props/CounterTwo";
 import LazyParent from "./Lazy_Component/LazyParent";
+import FormMap from "./components/FormMap";
 
 export const CountContext = React.createContext();
 
@@ -124,7 +125,7 @@ function App() {
       <Map />
       <TableRow /> */}
       {/* <HandleForm/> */}
-      {/* <Task3 /> */}
+      <Task3 />
       {/* <Task4 /> */}
       {/* <ListTable/> */}
       {/* <Admin /> */}
@@ -186,6 +187,7 @@ function App() {
       <hr />
 
       <LazyParent /> */}
+      {/* <FormMap /> */}
     </>
   );
 }
