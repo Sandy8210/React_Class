@@ -10,7 +10,6 @@ const Time = () => {
 
     interval = setInterval(() => {
       const updatedDate = new Date();
-      console.log(date.toLocaleTimeString());
       setDate(updatedDate);
       setCurrentTime(updatedDate.toLocaleTimeString());
     }, 1000);
@@ -19,12 +18,12 @@ const Time = () => {
     setTimeout(() => {
       clearInterval(interval);
       setPrint(true);
-      //   console.log("cleared");
+      console.log("cleared");
     }, 60000);
 
     // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);
-  }, [date]);
+  }, []);
 
   return (
     <div>
