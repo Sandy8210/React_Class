@@ -59,6 +59,8 @@ import CounterOne from "./Render_Props/CounterOne";
 import CounterTwo from "./Render_Props/CounterTwo";
 import LazyParent from "./Lazy_Component/LazyParent";
 import FormMap from "./components/FormMap";
+import ToDoProject from "./ToDo/ToDoProject";
+import Time from "./components/Time";
 
 export const CountContext = React.createContext();
 
@@ -125,7 +127,7 @@ function App() {
       <Map />
       <TableRow /> */}
       {/* <HandleForm/> */}
-      <Task3 />
+      {/* <Task3 /> */}
       {/* <Task4 /> */}
       {/* <ListTable/> */}
       {/* <Admin /> */}
@@ -188,6 +190,9 @@ function App() {
 
       <LazyParent /> */}
       {/* <FormMap /> */}
+      <ToDoProject />
+      <hr />
+      <Time />
     </>
   );
 }

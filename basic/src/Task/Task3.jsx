@@ -109,7 +109,7 @@ const Task3 = () => {
 
     if (name === "select1" && sel.select2) {
       const result = values[sel.select2][value] !== 0 ? input.input2 / values[sel.select2][value] : 0;
-      setInput((prev) => ({ ...prev, input1: result }));
+      setInput((prev) => ({ ...prev, input1: result.toFixed(2) }));
       console.log(`Converted value from ${sel.select2} to ${value}: ${result.toFixed(2)}`);
     } else if (name === "select2" && sel.select1) {
       const result = values[sel.select1][value] !== 0 ? input.input1 * values[sel.select1][value] : 0;

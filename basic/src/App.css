@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --body-background: #000;
 
   --primary-text: #fff;
@@ -206,7 +206,7 @@ span i {
 } */
 
 /* HTML: <div class="loader"></div> */
-.loader {
+/* .loader {
   width: 100px;
   height: 50px;
   border-radius: 100px 100px 0 0;
@@ -235,4 +235,4 @@ span i {
   100% {
     transform: rotate(1turn);
   }
-}
+} */
